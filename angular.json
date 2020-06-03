@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "autorizacao-front:build"
+            "browserTarget": "autorizacao-front:build",
+            "port": 9025
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "autorizacao-front"
+    }
+  },
+  "defaultProject": "autorizacao-front",
+  "cli": {
+    "analytics": false
+  }
 }

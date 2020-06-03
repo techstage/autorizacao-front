@@ -1,0 +1,39 @@
+<!-- <p>autorizacao-listagem works!</p> -->
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Transação</th>
+        <th scope="col">Autorização</th>
+        <th scope="col">Status</th>
+        <th scope="col">Valor</th>
+        <th scope="col">ID do Cliente</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Ordem de Pagamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of autorizacoes">
+        <th scope="row">{{a.transacao}}</th>
+        <td>{{a.id}}</td>
+        <td>{{a.statux}}</td>
+        <td>{{a.valor}}</td>
+        <td>{{a.cliente}}</td>
+        <td>{{a.nome}}</td>
+        <td>{{a.pagamento}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- payload
+{
+  "id":1,
+  ------------- "statux":"Solicitado",
+  ------------- "transacao":3000,
+  ------------- "pagamento":1,
+  ------------- "valor":300.33,
+  ------------- "cliente":1,
+  ------------- "nome":"CLIENTE AMEX"
+} -->
